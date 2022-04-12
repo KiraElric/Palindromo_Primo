@@ -1,6 +1,7 @@
 package model;
 
 public class Palindrome extends Number{
+    @Override
     public Boolean isPalindrome(int number){
         if (number / 10 >= 1){
             int reverseNumber = 0, remainder;
@@ -17,6 +18,12 @@ public class Palindrome extends Number{
         else {
             return false;
         }
-
     }
+
+    public Boolean isPrime(int number){
+        return null;
+    };
+    public Boolean isFibbonacci(int number){
+        return null;
+    };
 }
