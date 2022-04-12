@@ -28,7 +28,7 @@ public class Main {
             }
             else if (palindrome.isPalindrome(number)){
                 System.out.println(number + " -> El numero es palindromo");
-            }k
+            }
             else if (fibbonacci.isFibbonacci(number)){
                 System.out.println(number + " -> El numero pertenece a la serie de fibbonacci");
             }
