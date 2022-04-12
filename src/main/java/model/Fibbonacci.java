@@ -1,8 +1,12 @@
 package model;
 
-public class Fibbonacci extends Number{
+public class Fibbonacci extends Numero {
     @Override
-    public Boolean isFibbonacci(int number) {
+    public Boolean validate(int number){
+        return isFibbonacci(number);
+    }
+
+    private Boolean isFibbonacci(int number) {
         int first = 0, second = 1, third = 0;
 
         while (third <= number){
@@ -16,11 +20,4 @@ public class Fibbonacci extends Number{
         }
         return false;
     }
-
-    public Boolean isPrime(int number){
-        return null;
-    };
-    public Boolean isPalindrome(int number){
-        return null;
-    };
 }

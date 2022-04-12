@@ -1,8 +1,12 @@
 package model;
 
-public class Prime extends Number{
+public class Prime extends Numero {
     @Override
-    public Boolean isPrime(int number){
+    public Boolean validate(int number){
+        return isPrime(number);
+    }
+
+    private Boolean isPrime(int number){
         if (number == 1 || number == 0){
             return false;
         }
@@ -16,11 +20,4 @@ public class Prime extends Number{
 
         return true;
     }
-
-    public Boolean isFibbonacci(int number){
-        return null;
-    };
-    public Boolean isPalindrome(int number){
-        return null;
-    };
 }
