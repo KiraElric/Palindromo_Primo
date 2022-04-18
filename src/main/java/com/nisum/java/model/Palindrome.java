@@ -1,9 +1,9 @@
-package model;
+package com.nisum.java.model;
 
-public class Palindrome extends Numero {
+public class Palindrome extends Number {
     @Override
-    public Boolean validate(int number){
-        return isPalindrome(number);
+    public String validate(int number){
+        return isPalindrome(number)? "is a Palindrome" : "is not a palindrome";
     }
 
     private Boolean isPalindrome(int number){

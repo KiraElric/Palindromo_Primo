@@ -1,9 +1,9 @@
-package model;
+package com.nisum.java.model;
 
-public class Prime extends Numero {
+public class Prime extends Number {
     @Override
-    public Boolean validate(int number){
-        return isPrime(number);
+    public String validate(int number){
+        return isPrime(number)? "is a Prime number" : "does not belong to the set of primes numbers";
     }
 
     private Boolean isPrime(int number){
